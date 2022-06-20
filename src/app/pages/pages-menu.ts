@@ -15,7 +15,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Devices',
     icon: 'smartphone-outline',
-    link: '/pages/iot-dashboard',
+    link: '/pages/devices',
   },
   // {
   //   title: 'FEATURES',
