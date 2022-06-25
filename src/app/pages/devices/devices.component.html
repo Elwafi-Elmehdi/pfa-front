@@ -15,6 +15,15 @@
     </nb-card>
     <div class="device__wrapper">
         <div class="device__card">
+            <div
+                style="display:flex; justify-content: space-between;  font-size: x-small;text-wrap: none;margin: 0 0 0 .4rem;">
+                <nb-tag-list>
+                    <nb-tag size="tiny" appearance="filled" status="danger" [text]="'Inactive'"></nb-tag>
+                </nb-tag-list>
+                <nb-tag-list>
+                    <nb-tag size="tiny" appearance="filled" [text]="'25/06/2022'"></nb-tag>
+                </nb-tag-list>
+            </div>
             <h3>Device-01</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, sint optio voluptatum quas nobis
                 velit, in amet quasi repellendus dicta itaque quam nisi, illum beatae!</p>
@@ -28,22 +37,55 @@
                 <button nbButton size="small" status="danger">
                     <nb-icon icon="trash-2-outline"></nb-icon>
                 </button>
-                <!-- <span style="float:right">
-                    <nb-icon icon="person-outline"></nb-icon> {{v.user?.username}}
-                </span> -->
             </div>
-
         </div>
         <div class="device__card">
+            <div style="display:flex; justify-content: space-between;  font-size: x-small;text-wrap: none;">
+                <nb-tag-list>
+                    <nb-tag size="tiny" appearance="filled" status="danger" [text]="'Inactive'"></nb-tag>
+                </nb-tag-list>
+                <nb-tag-list>
+                    <nb-tag size="tiny" appearance="filled" [text]="'25/06/2022'"></nb-tag>
+                </nb-tag-list>
+            </div>
             <h3>Device-02</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, sint optio voluptatum quas nobis
                 velit, in amet quasi repellendus dicta itaque quam nisi, illum beatae!</p>
-
+            <div class="car__action_btns">
+                <button nbButton size="small" status="primary">
+                    <nb-icon icon="eye-outline"></nb-icon>
+                </button>
+                <button nbButton size="small" status="success">
+                    <nb-icon icon="download-outline"></nb-icon>
+                </button>
+                <button nbButton size="small" status="danger">
+                    <nb-icon icon="trash-2-outline"></nb-icon>
+                </button>
+            </div>
         </div>
         <div class="device__card">
+            <div style="display:flex; justify-content: space-between;  font-size: x-small;text-wrap: none;">
+                <nb-tag-list>
+                    <nb-tag size="tiny" appearance="filled" status="success" [text]="'Active'"></nb-tag>
+                </nb-tag-list>
+                <nb-tag-list>
+                    <nb-tag size="tiny" appearance="filled" [text]="'25/06/2022'"></nb-tag>
+                </nb-tag-list>
+            </div>
             <h3>Device-03</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, sint optio voluptatum quas nobis
                 velit, in amet quasi repellendus dicta itaque quam nisi, illum beatae!</p>
+            <div class="car__action_btns">
+                <button nbButton size="small" status="primary">
+                    <nb-icon icon="eye-outline"></nb-icon>
+                </button>
+                <button nbButton size="small" status="success">
+                    <nb-icon icon="download-outline"></nb-icon>
+                </button>
+                <button nbButton size="small" status="danger">
+                    <nb-icon icon="trash-2-outline"></nb-icon>
+                </button>
+            </div>
         </div>
     </div>
 </div>

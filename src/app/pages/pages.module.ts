@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbButton, NbButtonModule, NbCardModule, NbIconModule, NbInputModule, NbMenuModule } from '@nebular/theme';
+import { NbButton, NbButtonModule, NbCardModule, NbIconModule, NbInputModule, NbMenuModule, NbTagModule } from '@nebular/theme';
 
 import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
@@ -20,7 +20,8 @@ import { DevicesComponent } from './devices/devices.component';
     NbCardModule,
     NbInputModule,
     NbButtonModule,
-    NbIconModule
+    NbIconModule,
+    NbTagModule
   ],
   declarations: [
     PagesComponent,
