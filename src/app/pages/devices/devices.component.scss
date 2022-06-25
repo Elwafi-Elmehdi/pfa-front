@@ -9,10 +9,6 @@
     margin: 0 .5rem;
 }
 
-.filtre {
-    background-color: #fff;
-}
-
 .device__wrapper {
     display: flex;
     justify-content: center;
@@ -31,6 +27,12 @@
     }
 }
 
-.car__action_btns>* {
+.device__action_btns>* {
     margin: 0 .1rem;
+}
+
+.device__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

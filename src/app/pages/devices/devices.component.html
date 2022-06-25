@@ -1,16 +1,35 @@
+<div class="device__header">
+    <button nbButton status="success">
+        <nb-icon icon="plus-outline"></nb-icon>Device
+    </button>
+    <nb-form-field>
+        <input type="text" nbInput fullWidth status="primary" name="deviceRef" placeholder="Device reference">
+        <button size="small" nbSuffix style="color: #598BFF" nbButton ghost>
+            <nb-icon icon="search-outline" pack="eva"></nb-icon>
+        </button>
+    </nb-form-field>
+</div>
 <div class="row">
     <nb-card class="filtre col">
         <nb-card-header>
             <h4>Filtres</h4>
         </nb-card-header>
         <nb-card-body>
-            <input type="text" nbInput fullWidth placeholder="Last Name">
+            <nb-select fullWidth status="primary" placeholder="Device's Status" name="etat">
+                <nb-option value="active">Active</nb-option>
+                <nb-option value="inactive">Inactive</nb-option>
+            </nb-select>
             <input type="text" nbInput fullWidth placeholder="Last Name">
             <input type="text" nbInput fullWidth placeholder="Last Name">
             <input type="text" nbInput fullWidth placeholder="Last Name">
         </nb-card-body>
         <nb-card-footer>
-
+            <button nbButton fullWidth status="primary" outline>
+                <nb-icon icon="search-outline" pack="eva"></nb-icon> apply
+            </button>
+            <button nbButton fullWidth outline>
+                <nb-icon icon="close-square-outline" pack="eva"></nb-icon> clear
+            </button>
         </nb-card-footer>
     </nb-card>
     <div class="device__wrapper">
@@ -27,7 +46,7 @@
             <h3>Device-01</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, sint optio voluptatum quas nobis
                 velit, in amet quasi repellendus dicta itaque quam nisi, illum beatae!</p>
-            <div class="car__action_btns">
+            <div class="device__action_btns">
                 <button nbButton size="small" status="primary">
                     <nb-icon icon="eye-outline"></nb-icon>
                 </button>
@@ -51,7 +70,7 @@
             <h3>Device-02</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, sint optio voluptatum quas nobis
                 velit, in amet quasi repellendus dicta itaque quam nisi, illum beatae!</p>
-            <div class="car__action_btns">
+            <div class="device__action_btns">
                 <button nbButton size="small" status="primary">
                     <nb-icon icon="eye-outline"></nb-icon>
                 </button>
@@ -75,7 +94,7 @@
             <h3>Device-03</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, sint optio voluptatum quas nobis
                 velit, in amet quasi repellendus dicta itaque quam nisi, illum beatae!</p>
-            <div class="car__action_btns">
+            <div class="device__action_btns">
                 <button nbButton size="small" status="primary">
                     <nb-icon icon="eye-outline"></nb-icon>
                 </button>
