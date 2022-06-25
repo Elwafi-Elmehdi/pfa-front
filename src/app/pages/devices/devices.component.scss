@@ -1,0 +1,36 @@
+.row {
+    display: flex;
+    margin: 1rem -0.5rem;
+}
+
+.col {
+    width: 27%;
+    max-width: 26%;
+    margin: 0 .5rem;
+}
+
+.filtre {
+    background-color: #fff;
+}
+
+.device__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 74%;
+
+    .device__card {
+        background-color: #fff;
+        border-radius: 1rem;
+        height: max-content;
+        min-width: 100%;
+        padding: 1rem;
+        margin: .2rem .3rem;
+        flex: 1;
+        // box-shadow: 6px 6px 40px ;
+    }
+}
+
+.car__action_btns>* {
+    margin: 0 .1rem;
+}
