@@ -14,8 +14,6 @@ export class JwtInterceptor implements HttpInterceptor {
 
   constructor(private storageService: StorageService) { }
 
-
-
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     const accessToken = this.storageService.get('access_token');
     const isApiUrl = request.url.startsWith(environment.url);

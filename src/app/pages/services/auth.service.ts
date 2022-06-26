@@ -28,6 +28,11 @@ export class AuthService {
     this.storageService.set('refresh_token', res.refresh_token);
   }
 
+  public clearLocalStorage() {
+    this.storageService.remove('access_token');
+    this.storageService.remove('refresh_token');
+  }
+
   private getTokenRemainingTime() {
     const accessToken = localStorage.getItem('access_token');
     if (!accessToken) {
