@@ -24,8 +24,8 @@ export class AuthService {
     return this.http.post<LoginResult>(this.url, user);
   }
   public setLocalStorage(res: LoginResult) {
-    this.storageService.set('access_token', res.access_token);
-    this.storageService.set('refresh_token', res.refresh_token);
+    this.storageService.set('access_token', res.access);
+    this.storageService.set('refresh_token', res.refresh);
   }
 
   public clearLocalStorage() {
@@ -42,5 +42,6 @@ export class AuthService {
     const expires = new Date(jwtToken.exp * 1000);
     return expires.getTime() - Date.now();
   }
+
 
 }

@@ -1,4 +1,4 @@
 export class LoginResult {
-    access_token:string|null
-    refresh_token:string|null
+    access: string | null
+    refresh: string | null
 }

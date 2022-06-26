@@ -43,6 +43,8 @@ import { UnauthorizedInterceptor } from './pages/controller/interceptors/unautho
     ThemeModule.forRoot(),
   ],
   providers: [
+    JwtInterceptor,
+    UnauthorizedInterceptor,
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: UnauthorizedInterceptor, multi: true, },
   ],
