@@ -8,6 +8,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { DevicesComponent } from './devices/devices.component';
+import { DeviceformComponent } from './devices/deviceform/deviceform.component';
 
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import { DevicesComponent } from './devices/devices.component';
   declarations: [
     PagesComponent,
     DevicesComponent,
+    DeviceformComponent,
   ],
 })
 export class PagesModule {
