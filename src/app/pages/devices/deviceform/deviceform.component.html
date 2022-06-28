@@ -1,1 +1,20 @@
-<p>deviceform works!</p>
+<nb-card>
+    <nb-card-header style="display: flex;justify-content: space-between; align-items: center;">
+        <h6>New Device</h6>
+        <button nbButton status="danger" (click)="close()">
+            <nb-icon icon="close-outline"></nb-icon>
+        </button>
+    </nb-card-header>
+    <nb-card-body>
+        <nb-select fullWidth status="primary" placeholder="Device's Status" name="etat">
+            <nb-option value="active">Active</nb-option>
+            <nb-option value="inactive">Inactive</nb-option>
+        </nb-select>
+        <input type="text" nbInput fullWidth placeholder="Reference">
+    </nb-card-body>
+    <nb-card-footer style="display: flex; justify-content: flex-end;">
+        <button nbButton status="success">
+            <nb-icon icon="plus-outline"></nb-icon>add
+        </button>
+    </nb-card-footer>
+</nb-card>
