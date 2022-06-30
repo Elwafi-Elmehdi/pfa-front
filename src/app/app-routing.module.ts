@@ -8,8 +8,13 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
+import { LoginComponent } from './pages/login/login.component';
 
 export const routes: Routes = [
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
   {
     path: 'pages',
     loadChildren: () => import('./pages/pages.module')
