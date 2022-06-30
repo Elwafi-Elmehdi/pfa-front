@@ -9,6 +9,7 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { DevicesComponent } from './devices/devices.component';
 import { DeviceformComponent } from './devices/deviceform/deviceform.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { DeviceformComponent } from './devices/deviceform/deviceform.component';
     PagesComponent,
     DevicesComponent,
     DeviceformComponent,
+    LoginComponent,
   ],
 })
 export class PagesModule {
