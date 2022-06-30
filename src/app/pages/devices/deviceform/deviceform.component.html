@@ -1,20 +1,33 @@
-<nb-card>
-    <nb-card-header style="display: flex;justify-content: space-between; align-items: center;">
-        <h6>New Device</h6>
-        <button nbButton status="danger" (click)="close()">
-            <nb-icon icon="close-outline"></nb-icon>
-        </button>
-    </nb-card-header>
-    <nb-card-body>
-        <nb-select fullWidth status="primary" placeholder="Device's Status" name="etat">
-            <nb-option value="active">Active</nb-option>
-            <nb-option value="inactive">Inactive</nb-option>
-        </nb-select>
-        <input type="text" nbInput fullWidth placeholder="Reference">
-    </nb-card-body>
-    <nb-card-footer style="display: flex; justify-content: flex-end;">
-        <button nbButton status="success">
-            <nb-icon icon="plus-outline"></nb-icon>add
-        </button>
-    </nb-card-footer>
-</nb-card>
+<div class="container">
+    <nb-card>
+        <nb-card-header style="display: flex;justify-content: space-between; align-items: center;">
+            <h6>New Device</h6>
+            <button nbButton status="danger" (click)="close()">
+                <nb-icon icon="close-outline"></nb-icon>
+            </button>
+        </nb-card-header>
+        <nb-card-body>
+            <input type="text" status="primary" nbInput fullWidth placeholder="Reference"
+                [(ngModel)]="device.reference">
+            <input type="text" status="primary" nbInput fullWidth placeholder="Name" [(ngModel)]="device.name">
+            <input type="number" status="primary" nbInput fullWidth placeholder="Owner's ID" [(ngModel)]="device.owner">
+            <nb-select fullWidth status="primary" placeholder="Device's Status" name="etat">
+                <nb-option value="active">Active</nb-option>
+                <nb-option value="inactive">Inactive</nb-option>
+            </nb-select>
+            <nb-select fullWidth status="primary" placeholder="Device's Type" name="type" [(ngModel)]="device.type">
+                <nb-option value="SON">Ultrasonic Sensor</nb-option>
+                <nb-option value="GAS">Gas Sensor</nb-option>
+                <nb-option value="LIGHT">Light Sensor</nb-option>
+                <nb-option value="HUM">Humidity Sensor</nb-option>
+            </nb-select>
+            <textarea nbInput status="primary" fullWidth placeholder="Description"
+                [(ngModel)]="device.description"></textarea>
+        </nb-card-body>
+        <nb-card-footer style="display: flex; justify-content: flex-end;">
+            <button nbButton status="success" (click)="save()">
+                <nb-icon icon="plus-outline"></nb-icon>add
+            </button>
+        </nb-card-footer>
+    </nb-card>
+</div>

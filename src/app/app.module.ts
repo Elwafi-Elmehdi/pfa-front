@@ -22,11 +22,13 @@ import {
 } from '@nebular/theme';
 import { JwtInterceptor } from './pages/controller/interceptors/jwt.interceptor';
 import { UnauthorizedInterceptor } from './pages/controller/interceptors/unauthorized.interceptor';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
